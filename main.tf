@@ -96,6 +96,7 @@ resource "aws_security_group" "ssh_security" {
     Name = "allow-ssh"
   }
 }
+/*
 resource "aws_instance" "demo1" {
   ami           = var.ami # us-east-1
   instance_type = var.ec2-type
@@ -106,7 +107,7 @@ resource "aws_instance" "demo1" {
   user_data       = file("install-httpd.sh")
 
 }
-/*
+
 resource "aws_instance" "demo12" {
   ami           = "ami-0dfcb1ef8550277af" # us-east-1
   instance_type = "t2.micro"
